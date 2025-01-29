@@ -1,6 +1,6 @@
 # Hospitality Revenue Insights Dashboard
 
-This repository contains a dashboard for visualizing revenue insights in the hospitality domain. The dashboard provides a comprehensive overview of key metrics, trends, and distributions related to hotel performance.
+This folder contains a dashboard for visualizing revenue insights in the hospitality domain. The dashboard provides a comprehensive overview of key metrics, trends, and distributions related to hotel performance.
 ![Alt Text](https://github.com/mohankumar-data-analyst/PowerBI-Reports/blob/main/Revenue%20Insights%20in%20Hospitality%20Domain%20Report/Screenshot%202025-01-30%20005653.png)
 
 
