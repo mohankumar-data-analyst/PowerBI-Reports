@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 44.588912142632608,
+            "y": 163.63636363636363
+          },
+          "nodeIndex": "dim_date",
+          "nodeLineageTag": "2dbd1398-2643-4458-9ae6-93da75cb15c9",
+          "size": {
+            "height": 182,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 52.730205726084449,
+            "y": 419.48034536811014
+          },
+          "nodeIndex": "dim_hotels",
+          "nodeLineageTag": "5f9ffee0-6f64-4953-a717-8188317af759",
+          "size": {
+            "height": 187,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 742.63436668808708,
+            "y": 290.77272727272731
+          },
+          "nodeIndex": "dim_rooms",
+          "nodeLineageTag": "65cce8f1-3c74-4513-8d09-083342c0f1cc",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 413.13436668808708,
+            "y": 517.57806527327421
+          },
+          "nodeIndex": "fact_aggregated_bookings",
+          "nodeLineageTag": "0e8e0ce5-dfcb-4c69-8774-441f5374d85b",
+          "size": {
+            "height": 212,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 397.5454545454545,
+            "y": 0
+          },
+          "nodeIndex": "fact_bookings",
+          "nodeLineageTag": "ede948db-833a-4742-9aa5-326e41a8d9e9",
+          "size": {
+            "height": 389,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 88,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

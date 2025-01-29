@@ -1,0 +1,205 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleDefault\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "bumpChart1FB7F15A3B454007B459186335A40B8E",
+    "SankeyDiagram1446463184954"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleDefault",
+            "path": "BuiltInThemes/AccessibleDefault.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"type\":1}",
+      "displayName": "Report",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1102.00,
+      "name": "bc2497131e302bc84901",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"027c8e52c78877526c35\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":430,\"z\":4000,\"width\":305.7142857142857,\"height\":312.8571428571429,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_bookings.room_category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_bookings.room_category)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"room_category\"},\"Name\":\"fact_bookings.room_category\",\"NativeReferenceName\":\"room_category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"room_category\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_bookings.room_category)\",\"NativeReferenceName\":\"Count of room_category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"room_category\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 312.86,
+          "width": 305.71,
+          "x": 0.00,
+          "y": 430.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"096d40809d9c0d4ed98c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":94.28571428571429,\"z\":3000,\"width\":515.7142857142858,\"height\":280,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_hotels.property_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dim_hotels.property_name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_hotels\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"property_name\"},\"Name\":\"dim_hotels.property_name\",\"NativeReferenceName\":\"property_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"property_name\"}},\"Function\":5},\"Name\":\"CountNonNull(dim_hotels.property_name)\",\"NativeReferenceName\":\"Count of property_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"property_name\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 515.71,
+          "x": 0.00,
+          "y": 94.29,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"0b4346e5384934879114\",\"layouts\":[{\"id\":0,\"position\":{\"x\":382.8571428571429,\"y\":0,\"z\":0,\"width\":1225.7142857142858,\"height\":101.42857142857143,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Revenue Insights in Hospitality Domain report\",\"textStyle\":{\"fontSize\":\"40pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 101.43,
+          "width": 1225.71,
+          "x": 382.86,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"0bfe2b3d91dabd2c9cce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":310,\"y\":430,\"z\":7000,\"width\":205.71428571428572,\"height\":117.14285714285715,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(fact_bookings.revenue_realized)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"revenue_realized\"}},\"Function\":0},\"Name\":\"Sum(fact_bookings.revenue_realized)\",\"NativeReferenceName\":\"Sum of revenue_realized\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"revenue_realized\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of the revenue '\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.14,
+          "width": 205.71,
+          "x": 310.00,
+          "y": 430.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"20c2e393815448d9cde5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":305.7142857142857,\"y\":650,\"z\":5000,\"width\":205.71428571428572,\"height\":102.85714285714286,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(fact_aggregated_bookings.capacity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_aggregated_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"capacity\"}},\"Function\":0},\"Name\":\"Sum(fact_aggregated_bookings.capacity)\",\"NativeReferenceName\":\"Sum of capacity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"capacity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 102.86,
+          "width": 205.71,
+          "x": 305.71,
+          "y": 650.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"2ed51fba15942c4de370\",\"layouts\":[{\"id\":0,\"position\":{\"x\":510.00000000000006,\"y\":555.7142857142858,\"z\":13000,\"width\":372.8571428571429,\"height\":204.2857142857143,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.Day Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_bookings.check_in_date)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Day Name\"},\"Name\":\"dim_date.Day Name\",\"NativeReferenceName\":\"Day Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"check_in_date\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_bookings.check_in_date)\",\"NativeReferenceName\":\"check_in_date1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"check_in_date\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 204.29,
+          "width": 372.86,
+          "x": 510.00,
+          "y": 555.71,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"4c4539400ce7d0c2816e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":882.8571428571429,\"y\":255.71428571428572,\"z\":1000,\"width\":372.8571428571429,\"height\":227.14285714285717,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(dim_hotels.city)\"}],\"Category\":[{\"queryRef\":\"dim_hotels.city\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_hotels\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"city\"}},\"Function\":5},\"Name\":\"CountNonNull(dim_hotels.city)\",\"NativeReferenceName\":\"city\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"city\"},\"Name\":\"dim_hotels.city\",\"NativeReferenceName\":\"city1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"city\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 227.14,
+          "width": 372.86,
+          "x": 882.86,
+          "y": 255.71,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6b1c9d10dea879e8e308\",\"layouts\":[{\"id\":0,\"position\":{\"x\":697.1428571428572,\"y\":764.2857142857143,\"z\":15000,\"width\":582.8571428571429,\"height\":337.14285714285717,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_bookings.booking_platform\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_bookings.booking_platform)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_platform\"},\"Name\":\"fact_bookings.booking_platform\",\"NativeReferenceName\":\"booking_platform\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_platform\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_bookings.booking_platform)\",\"NativeReferenceName\":\"Count of booking_platform\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_platform\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 337.14,
+          "width": 582.86,
+          "x": 697.14,
+          "y": 764.29,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"71581baf055587e52328\",\"layouts\":[{\"id\":0,\"position\":{\"x\":305.7142857142857,\"y\":528.5714285714286,\"z\":6000,\"width\":205.71428571428572,\"height\":117.14285714285715,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(fact_aggregated_bookings.successful_bookings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_aggregated_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"successful_bookings\"}},\"Function\":0},\"Name\":\"Sum(fact_aggregated_bookings.successful_bookings)\",\"NativeReferenceName\":\"Sum of successful_bookings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"successful_bookings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 117.14,
+          "width": 205.71,
+          "x": 305.71,
+          "y": 528.57,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"724999b999771adaae52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":888.5714285714287,\"y\":492.8571428571429,\"z\":10000,\"width\":391.42857142857144,\"height\":267.14285714285717,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(fact_bookings.no_guests)\"}],\"Category\":[{\"queryRef\":\"fact_bookings.no_guests\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"no_guests\"}},\"Function\":5},\"Name\":\"Sum(fact_bookings.no_guests)\",\"NativeReferenceName\":\"Count of no_guests1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"no_guests\"},\"Name\":\"fact_bookings.no_guests\",\"NativeReferenceName\":\"no_guests\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"no_guests\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 267.14,
+          "width": 391.43,
+          "x": 888.57,
+          "y": 492.86,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"77d9191520c674629209\",\"layouts\":[{\"id\":0,\"position\":{\"x\":890,\"y\":117.14285714285715,\"z\":11000,\"width\":195.71428571428572,\"height\":117.14285714285715,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(fact_bookings.property_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"property_id\"}},\"Function\":2},\"Name\":\"CountNonNull(fact_bookings.property_id)\",\"NativeReferenceName\":\"Count of property_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"property_id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hotels'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.14,
+          "width": 195.71,
+          "x": 890.00,
+          "y": 117.14,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"7bc2cdce0745d1d5094a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":760,\"z\":14000,\"width\":702.8571428571429,\"height\":341.42857142857144,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Count(fact_bookings.booking_id)\"}],\"Group\":[{\"queryRef\":\"fact_bookings.property_id\",\"active\":true}],\"Details\":[{\"queryRef\":\"dim_hotels.property_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_hotels\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_id\"}},\"Function\":2},\"Name\":\"Count(fact_bookings.booking_id)\",\"NativeReferenceName\":\"Count of booking_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"property_id\"},\"Name\":\"fact_bookings.property_id\",\"NativeReferenceName\":\"Count of property_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"property_name\"},\"Name\":\"dim_hotels.property_name\",\"NativeReferenceName\":\"property_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 341.43,
+          "width": 702.86,
+          "x": 0.00,
+          "y": 760.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"b8371bf266b55027d139\",\"layouts\":[{\"id\":0,\"position\":{\"x\":524.2857142857143,\"y\":321.42857142857144,\"z\":9000,\"width\":364.28571428571433,\"height\":215.71428571428572,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_bookings.booking_status\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_bookings.booking_status)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_status\"},\"Name\":\"fact_bookings.booking_status\",\"NativeReferenceName\":\"booking_status\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_status\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_bookings.booking_status)\",\"NativeReferenceName\":\"Count of booking_status\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"booking_status\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 215.71,
+          "width": 364.29,
+          "x": 524.29,
+          "y": 321.43,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b96a183067307d990854\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1288.5714285714287,\"y\":102.85714285714286,\"z\":8000,\"width\":622.8571428571429,\"height\":275.7142857142857,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(fact_bookings.ratings_given)\"}],\"Category\":[{\"queryRef\":\"fact_bookings.ratings_given\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ratings_given\"}},\"Function\":0},\"Name\":\"Sum(fact_bookings.ratings_given)\",\"NativeReferenceName\":\"Sum of ratings_given\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ratings_given\"},\"Name\":\"fact_bookings.ratings_given\",\"NativeReferenceName\":\"ratings_given\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ratings_given\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 275.71,
+          "width": 622.86,
+          "x": 1288.57,
+          "y": 102.86,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"bf118afb8e64e74225d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1085.7142857142858,\"y\":117.14285714285715,\"z\":12000,\"width\":172.85714285714286,\"height\":117.14285714285715,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(fact_bookings.check_in_date)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"check_in_date\"}},\"Function\":2},\"Name\":\"Min(fact_bookings.check_in_date)\",\"NativeReferenceName\":\"Count of check_in_date\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"check_in_date\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'DAYS'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.14,
+          "width": 172.86,
+          "x": 1085.71,
+          "y": 117.14,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"f946724c9052c4ca1b68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1297.1428571428573,\"y\":722.8571428571429,\"z\":16000,\"width\":622.8571428571429,\"height\":378.5714285714286,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_aggregated_bookings.successful_bookings\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_aggregated_bookings.check_in_date)\"}],\"Series\":[{\"queryRef\":\"fact_aggregated_bookings.Day Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_aggregated_bookings\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"check_in_date\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_aggregated_bookings.check_in_date)\",\"NativeReferenceName\":\"check_in_date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"successful_bookings\"},\"Name\":\"fact_aggregated_bookings.successful_bookings\",\"NativeReferenceName\":\"Count of successful_bookings1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day Name\"},\"Name\":\"fact_aggregated_bookings.Day Name\",\"NativeReferenceName\":\"Count of Day Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"check_in_date\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 378.57,
+          "width": 622.86,
+          "x": 1297.14,
+          "y": 722.86,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"fc5f56517701d5eeed80\",\"layouts\":[{\"id\":0,\"position\":{\"x\":544.2857142857143,\"y\":101.42857142857143,\"z\":2000,\"width\":345.7142857142857,\"height\":207.14285714285717,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_hotels.category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dim_hotels.category)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_hotels\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"category\"},\"Name\":\"dim_hotels.category\",\"NativeReferenceName\":\"category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"category\"}},\"Function\":5},\"Name\":\"CountNonNull(dim_hotels.category)\",\"NativeReferenceName\":\"Count of category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"category\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 207.14,
+          "width": 345.71,
+          "x": 544.29,
+          "y": 101.43,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"fcb7005eb0547add10c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1280,\"y\":378.5714285714286,\"z\":17000,\"width\":640,\"height\":341.42857142857144,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"SankeyDiagram1446463184954\",\"projections\":{\"Source\":[{\"queryRef\":\"dim_hotels.city\"}],\"Destination\":[{\"queryRef\":\"dim_hotels.property_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_hotels\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"city\"},\"Name\":\"dim_hotels.city\",\"NativeReferenceName\":\"city\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"property_name\"},\"Name\":\"dim_hotels.property_name\",\"NativeReferenceName\":\"property_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"nodeComplexSettings\":[{\"properties\":{\"nodePositions\":{\"expr\":{\"Literal\":{\"Value\":\"'[{\\\"name\\\":\\\"Bangalore\\\",\\\"x\\\":\\\"0\\\",\\\"y\\\":\\\"5\\\"},{\\\"name\\\":\\\"Delhi\\\",\\\"x\\\":\\\"0\\\",\\\"y\\\":\\\"68\\\"},{\\\"name\\\":\\\"Hyderabad\\\",\\\"x\\\":\\\"0\\\",\\\"y\\\":\\\"121\\\"},{\\\"name\\\":\\\"Mumbai\\\",\\\"x\\\":\\\"0\\\",\\\"y\\\":\\\"183\\\"},{\\\"name\\\":\\\"Atliq Bay\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"5\\\"},{\\\"name\\\":\\\"Atliq Blu\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"47\\\"},{\\\"name\\\":\\\"Atliq City\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"88\\\"},{\\\"name\\\":\\\"Atliq Exotica\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"130\\\"},{\\\"name\\\":\\\"Atliq Grands\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"161\\\"},{\\\"name\\\":\\\"Atliq Palace\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"203\\\"},{\\\"name\\\":\\\"Atliq Seasons\\\",\\\"x\\\":\\\"537\\\",\\\"y\\\":\\\"244\\\"}]'\"}}},\"viewportSize\":{\"expr\":{\"Literal\":{\"Value\":\"'{\\\"height\\\":\\\"251\\\",\\\"width\\\":\\\"582.2222222222222\\\"}'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 341.43,
+          "width": 640.00,
+          "x": 1280.00,
+          "y": 378.57,
+          "z": 17000.00
+        }
+      ],
+      "width": 1920.00
+    }
+  ],
+  "theme": "AccessibleDefault"
+}
