@@ -1,6 +1,6 @@
 # T20 Cricket Analytics Report - Power BI
 
-![T20 Cricket Analytics](path/to/your/image.png)
+![T20 Cricket Analytics](T20 CRICKET ANALYTICS REPORT/image.png)
 
 ## Overview
 The **T20 Cricket Analytics Report** is an interactive Power BI dashboard designed to analyze key performance metrics in T20 cricket matches. This project provides valuable insights into player performances, team comparisons, and match trends using data visualization techniques.
