@@ -1,6 +1,6 @@
 # Car Data Analysis
 
-![Car Data Analysis]([images/car_data_analysis.png](https://github.com/mohankumar-data-analyst/PowerBI-Reports/blob/main/Car%20Data%20Analysis/Screenshot%202025-02-11%20202107.png))
+![Car Data Analysis](https://github.com/mohankumar-data-analyst/PowerBI-Reports/blob/main/Car%20Data%20Analysis/Screenshot%202025-02-11%20202107.png)
 
 ## Overview
 This project analyzes car-related data to uncover trends in vehicle performance, pricing, and fuel efficiency. Using **SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), and Power BI**, the analysis provides insights into factors affecting car prices, mileage, and market trends.
